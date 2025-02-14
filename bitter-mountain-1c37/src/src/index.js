@@ -36,7 +36,7 @@ async function handleShorten(request, env) {
     await stmt.bind(shortCode, longUrl).run();
 
     return new Response(
-      JSON.stringify({ shortUrl: `https://your-worker-url/${shortCode}` }),
+      JSON.stringify({ shortUrl: `https://bitter-mountain-1c37/${shortCode}` }),
       { headers: { "Content-Type": "application/json" } }
     );
   } catch (error) {
