@@ -1,0 +1,13 @@
+{
+	"name": "bitter-mountain-1c37",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"wrangler": "^3.109.1"
+	}
+}

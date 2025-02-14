@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await response.json();
             
             if (response.ok) {
-                shortenedUrlOutput.innerHTML = `✅ Shortened URL: <a href="${data.shortUrl}" target="_blank">${data.shortUrl}</a>`;
+                shortenedUrlOutput.innerHTML = `✅ Shortened URL: <a href="${data.shortUrl}" target="_blank" onclick="window.open('${longUrl}', '_blank'); return false;">${data.shortUrl}</a>`;
                 shortenedUrlOutput.style.color = "#28a745";
             } else {
                 shortenedUrlOutput.innerHTML = `⚠️ Error: ${data.message || "Something went wrong"}`;

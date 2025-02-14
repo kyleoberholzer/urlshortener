@@ -1,0 +1,10 @@
+name = "bitter-mountain-1c37"
+main = "src/src/index.js"
+compatibility_date = "2023-08-23"
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DATABASE"
+database_id = "cffa3211-ebbe-4567-ad4c-ec38cb4f4e6f"
+database_name = "bitter-mountain-1c37-db"
